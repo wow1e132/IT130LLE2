@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .navbar { overflow: hidden; position: fixed; top: 0; width: 2000px; background-color:lightgreen; align-items: center;margin-left: -1% }
+        .navbar { overflow: hidden; position: fixed; top: 0; width: 2000px; background-color:lightgreen; align-items: center;margin-left: -5.5% }
         .navbar a { float:left ; display: block; color:darkslateblue; text-align: center; padding: 20px; text-decoration: none; font-size: 20px;font-weight: lighter; font-family: sans-serif; pointer-events: all;}
         .navbar a:hover { background: lightsteelblue; color:darkslateblue; }
         .dropbtn {float:left ; display: block; color:darkslateblue; text-align: center; padding: 20px; text-decoration: none; font-size: 20px;font-weight: lighter; font-family: sans-serif;border:none; background-color: lightgreen;}
@@ -11,12 +11,17 @@
         .btnlist {display:none; position: absolute; background-color: lightgreen;  z-index: 1;font-family: sans-serif;font-weight: lighter; }
         .dropdown:hover .btnlist {display: block; position:static;}
         .dropdown:hover .dropbtn {background-color:lightgreen; color:darkslateblue;}
-        
+
+
         h1,h2, h3,h4 {font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: lighter;}
         .mainbody5 { padding-top: 5%; background-color: lightskyblue;margin-left: 5%;margin-right: 5%;}
         .topleft {width:40%;float: left; }
         .topright{ width: 50%; float: right;}
         .middle1 {width:97.5%}
+
+        .zoom { padding: 50px; transition: transform .2s; width: 200px; height: 200px; margin: 0 auto;}
+        .zoom:hover { transform: scale(1.5); }
+
         input[type="submit"], input[type="reset"] {color:darkslateblue; background-color: lightgreen;}
         input[type="submit"]:hover , input[type="reset"]:hover {color:darkslateblue; background-color: lightsteelblue;}
     </style>
@@ -30,7 +35,7 @@
 </header>
 
 <div class="navbar">
-    <a href="home.html">Home</a>
+    <a href="index.html">Home</a>
     <div class="dropdown">
     <button class="dropbtn" href="floorplan.html">Floor Plan</button>
         <div class="btnlist">
@@ -43,7 +48,7 @@
 </div>
 
 <body class="mainbody5">
-    <form method="post" action="mailto:jaystin132@gmail.com" >
+    <form method="post" action="mailto:jaystin132@gmail.com" > 
         <center><input type="search" href="forms.html" id="test" type="text" name="search" size="50" maxlength="255" placeholder="Search more options.. "/></center>
         <fieldset class="topleft">
             <legend align="center"><h3>Personal Information</h3></legend>
@@ -252,7 +257,7 @@
                 <option value="corner-throughlot">Corner-Through Lot</option>
             </select>
             <br><br>
-            <center><img src="lot type.png" alt="lot types image" style="width:20%; height:20%; align-items: center;"></center>
+            <center><img class= "zoom"src="lot type.png" alt="lot types image" style="width:20%; height:20%; align-items: center;"></center>
 
             <label for="floors">Choose a property style:  </label>
             <select name="floors">
@@ -261,7 +266,7 @@
                 <option value="floor3">2-Storey</option>
             </select>
             <br><br>
-            <center><img src="propertystyle.jpg" alt="property style image" style="width:35%; height:35%;"></img></center>
+            <center><img class= "zoom" src="propertystyle.jpg" alt="property style image" style="width:35%; height:35%;"></img></center>
         </fieldset>
 
         <fieldset class=textbox>

@@ -7,17 +7,29 @@
 <title>Master Bedroom</title>
 <style>  
 .navbar { overflow: hidden; position: fixed; top: 0; width: 2000px; background-color:lightgreen; align-items: center;margin-left: -1% } .navbar { overflow: hidden; position: fixed; top: 0; width: 101%; background-color:lightgreen; align-items: center;margin-left: -1%; }
-   .navbar a { float:left ; display: block; color:darkslateblue; text-align: center; padding: 20px; text-decoration: none; font-size: 17px;font-weight: lighter;}
-   .navbar a:hover { background: lightsteelblue; color:darkslateblue; }
+.navbar { overflow: hidden; position: fixed; top: 0; width: 2000px; background-color:lightgreen; align-items: center;margin-left: -1% }
+      .navbar a { float:left ; display: block; color:darkslateblue; text-align: center; padding: 20px; text-decoration: none; font-size: 20px;font-weight: lighter; font-family: sans-serif; pointer-events: all;}
+      .navbar a:hover { background: lightsteelblue; color:darkslateblue; }
+      .dropbtn {float:left ; display: block; color:darkslateblue; text-align: center; padding: 20px; text-decoration: none; font-size: 20px;font-weight: lighter; font-family: sans-serif;border:none; background-color: lightgreen;}
+      .dropbtn:hover { background-color:lightsteelblue ; color:darkslateblue; display:block; padding:20px}
+      .btnlist {display:none; position: absolute; background-color: lightgreen;  z-index: 1;font-family: sans-serif;font-weight: lighter; }
+      .dropdown:hover .btnlist {display: block; position:static;}
+      .dropdown:hover .dropbtn {background-color:lightgreen; color:darkslateblue;}
    .mainbody3 { padding-top: 5%; background-color: lightskyblue;} 
 </style>
 </head>
 <div class="navbar">
    <a href="index.html">Home</a>
-   <a href="floorplan.html">Floor Plan</a>
+   <div class="dropdown">
+   <button class="dropbtn" href="floorplan.html">Floor Plan</button>
+       <div class="btnlist">
+           <a href="floorplan.html">Floor Plan Layout</a>
+           <a href="dining.htm">Dining Room</a>
+           <a href="living.htm">Living Room</a>
+           <a href="master.htm">Master Bedroom</a>
+       </div> </div>
    <a href="forms.html">Inquiries</a>
 </div>
-
 <body class = "mainbody3" link="navy" alink="navy" vlink="navy">
 
 <table>
@@ -44,7 +56,7 @@ height="360" width="480" />
 
 <tr>
 <td><br /></td>
-<td align="center"><a href="home.html">Home</a> | 
+<td align="center"><a href="index.html">Home</a> | 
 <a href="living.htm">Living</a> |
 <a href="dining.htm">Dining</a> |
 <a href="master.htm">Master</a> 
