@@ -3,9 +3,15 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .navbar { overflow: hidden; position: fixed; top: 0; width: 1500px; background-color:lightgreen; align-items: center;margin-left: -5%; }
-        .navbar a { float:left ; display: block; color:darkslateblue; text-align: center; padding: 20px; text-decoration: none; font-size: 17px;font-weight: lighter;}
+        .navbar { overflow: hidden; position: fixed; top: 0; width: 2000px; background-color:lightgreen; align-items: center;margin-left: -1% }
+        .navbar a { float:left ; display: block; color:darkslateblue; text-align: center; padding: 20px; text-decoration: none; font-size: 20px;font-weight: lighter; font-family: sans-serif; pointer-events: all;}
         .navbar a:hover { background: lightsteelblue; color:darkslateblue; }
+        .dropbtn {float:left ; display: block; color:darkslateblue; text-align: center; padding: 20px; text-decoration: none; font-size: 20px;font-weight: lighter; font-family: sans-serif;border:none; background-color: lightgreen;}
+        .dropbtn:hover { background-color:lightsteelblue ; color:darkslateblue; display:block; padding:20px}
+        .btnlist {display:none; position: absolute; background-color: lightgreen;  z-index: 1;font-family: sans-serif;font-weight: lighter; }
+        .dropdown:hover .btnlist {display: block; position:static;}
+        .dropdown:hover .dropbtn {background-color:lightgreen; color:darkslateblue;}
+        
         h1,h2, h3,h4 {font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: lighter;}
         .mainbody5 { padding-top: 5%; background-color: lightskyblue;margin-left: 5%;margin-right: 5%;}
         .topleft {width:40%;float: left; }
@@ -24,8 +30,15 @@
 </header>
 
 <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="floorplan.html">Floor Plan</a>
+    <a href="home.html">Home</a>
+    <div class="dropdown">
+    <button class="dropbtn" href="floorplan.html">Floor Plan</button>
+        <div class="btnlist">
+            <a href="floorplan.html">Floor Plan Layout</a>
+            <a href="dining.htm">Dining Room</a>
+            <a href="living.htm">Living Room</a>
+            <a href="master.htm">Master Bedroom</a>
+        </div> </div>
     <a href="forms.html">Inquiries</a>
 </div>
 
