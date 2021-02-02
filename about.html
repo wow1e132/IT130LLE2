@@ -1,0 +1,93 @@
+<!DOCTYPE HTML> 
+<html style="background-color:black">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar {overflow:hidden;text-align: center; position: fixed; top: 0; width: 100%;padding: 0px;background-color: white;margin-left: -10px;}
+        .navbar a{ display: inline-block; width: 15%; color: black;text-decoration: none; text-transform: uppercase; font-family:Arial; font-weight:200;}
+        .navbar a:hover {text-decoration: underline;}
+        .body {margin-top: 200px;text-align: center;position:relative; }
+        .image {position: absolute;height: 50%;width: 20%;z-index:-5;left: 40%;top: 20%;} 
+        .body .buttons { display: block;top: auto;position: relative;}
+        .body p {font-weight: 200; font-family: Arial, Helvetica, sans-serif; color:red;}
+    </style>
+    <title>A B O U T</title>
+    <script language='JavaScript' type='text/JavaScript'>
+        function move_img(str) 
+        {
+        var step=100; // change this to different step value
+        switch(str){
+
+            case "southeast":
+            var y=document.getElementById('i1').offsetLeft;
+            var x=document.getElementById('i1').offsetTop;
+            y= y + step;
+            x= x + step;
+            document.getElementById('i1').style.left= y + "px";
+            document.getElementById('i1').style.top= x + "px";
+            break;
+        
+            case "southwest":
+            var y=document.getElementById('i1').offsetLeft;
+            var x=document.getElementById('i1').offsetTop;
+            y= y - step;
+            x= x + step;
+            document.getElementById('i1').style.left= y + "px";
+            document.getElementById('i1').style.top= x + "px";
+            break;
+        
+            case "northwest":
+            var y=document.getElementById('i1').offsetLeft;
+            var x=document.getElementById('i1').offsetTop;
+            y= y - step;
+            x= x - step;
+            document.getElementById('i1').style.left= y + "px";
+            document.getElementById('i1').style.top= x + "px";
+            break;
+        
+            case "northeast":
+            var x=document.getElementById('i1').offsetTop;
+            var y=document.getElementById('i1').offsetLeft;
+            x= x - step;
+            y= y + step;
+            document.getElementById('i1').style.top= x + "px";
+            document.getElementById('i1').style.left= y + "px";
+            break;
+        
+        } }
+    </script>
+</head>
+
+<header>
+<div class="navbar" >
+    <h1><a href="index.html">The Weeknd</a></h1>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+    <a href="fansignup.html">Fan SignUp</a>
+</div>
+</header>
+
+<body class="body">
+    <img src="weekndsuperimposed.png" class ="image" id='i1'>
+    <p>Abel Makkonen Tesfaye, known professionally as the Weeknd.</p>
+    <p>is a Canadian singer, songwriter, and record producer.</p>
+    <p>Noted for his versatility in vocal style, music production, and eccentric presentation,</p>
+    <p>The Weeknd is often cited as an influence to contemporary music, as well as by other artists</p>
+    <p>best known for his explicit songs about sex and drugs, many of which were autobiographical, and for his soaring falsetto and its singular tremolo.</p>
+    <p>The Weeknd's “Blinding Lights” took the top spot for most popular song with close to 1.6 billion plays.</p>
+    <p>The single was the subject of a popular dance on the social media platform throughout the year.</p>
+    <p>His music has always been on top, never really disappointing, creatively astonishing,</p>
+    <p>which is obviously topped by his extremely pleasing and godlike voice which makes</p>
+    <p>him one of the best singers of this generation and one of the most talented artists of all time.</p>
+    <div class="buttons">
+        <input type=button onClick=move_img('northwest') value='Northwest'>
+        <input type=button onClick=move_img('northeast') value='Northeast'>
+        <br>
+        <input type=button onClick=move_img('southwest') value='Southwest'>
+        <input type=button onClick=move_img('southeast') value='Southeast'>
+    </div>
+</body>
+    
+</html>

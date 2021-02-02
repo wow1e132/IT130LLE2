@@ -1,0 +1,45 @@
+<!DOCTYPE HTML> 
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar {overflow:hidden;text-align: center; position: fixed; top: 0; width: 100%;padding: 0px;background-color: white;margin-left: -10px;}
+        .navbar a{ display: inline-block; width: 15%; color: black;text-decoration: none; text-transform: uppercase; font-family:Arial; font-weight:200;}
+        .navbar a:hover {text-decoration: underline;}
+        h1 {font-family: Arial; font-weight: 200; text-transform: uppercase; text-align: center;}
+        .body {margin-top: 150px;}
+        ::placeholder {font-family: Arial, Helvetica, sans-serif; font-weight: lighter;color: red;}
+        
+    </style>
+    <title>C O N T A C T</title>
+</head>
+<header>
+    <div class="navbar" >
+    <h1><a href="index.html">The Weeknd</a></h1>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+    <a href="fansignup.html">Fan SignUp</a>
+</div>
+</header>
+
+<body class="body">
+    <h1>SEND US A MESSAGE</h1>
+    <form method="post" action="mailto:jaystin132@gmail.com">
+        <center>
+        <fieldset style="background-image: url(background.gif);background-repeat: no-repeat;background-size:cover; height: 400px;">
+            <div class="Inquiries">
+            <legend align="center"><h1 style="color: white;">Contact us for your inquiries</h1></legend>
+            <input type="text" id="name" placeholder="Enter Name" style="margin: 2%; padding: 5px; background: transparent; border:none;text-align: center;"><br>
+            <input type="text" id="email" placeholder="Enter Email" style="margin: 2%; padding: 5px;background: transparent; border: none;text-align: center;"  ><br>
+            <textarea type="text" id="message" placeholder="Enter your inquiry" style="width:50%;height: 100%; margin: 2%; padding: 5px;background: transparent;background: transparent; border: none;text-align: center;"></textarea>
+            </div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </fieldset>
+        </center>
+    </form>
+</body>
+    
+</html>
