@@ -1,0 +1,3 @@
+.navbar {overflow:hidden;text-align: center; position: fixed; top: 0; width: 100%;padding: 0px;background-color: white;margin-left: -10px;}
+.navbar a{ display: inline-block; width: 15%; color: black;text-decoration: none; text-transform: uppercase; font-family:Arial; font-weight:200;}
+.navbar a:hover {text-decoration: underline;}
