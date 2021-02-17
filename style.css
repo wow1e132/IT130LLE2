@@ -97,3 +97,12 @@ a{
     background-color: #4f211d !Important;
     border: solid 1px #4f211d;
 }
+
+.white{
+    color: #fff;
+}
+
+.white:hover{
+    color: #000;
+    text-decoration: none;
+}
