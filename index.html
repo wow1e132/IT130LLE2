@@ -1,37 +1,112 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,fixed-scale">
+		<title>Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ex3style.css">
-    <style>
-        .body {margin-top:auto; align-items: center;text-align:center;}
-        .body h1 {font-family: Arial; font-weight: lighter;color: white; text-transform: uppercase;}
-        .mainbody {background-image: url(weekndwp.jpg); background-repeat: no-repeat; background-size: cover;}
-        .header h2 {font-family: Arial, Helvetica, sans-serif; font-weight: 200;margin-top: 200px;}
-    </style>
-    <title>H O M E</title>
-</head>
-<div class="mainbody">
-<header class="header" style="align-items:center; text-align:center;margin-top:120px; font-family: Arial, Helvetica, sans-serif; font-weight: 100;color:white">
-    <h2>Abel Makkonen Tesfaye, known professionally as the Weeknd</h2>
-</header>
+    <body>
+        <!--Navigation Bar-->
+        <div class="container-fluid text-center p-3">
+            <a href="index.html"><img src="images/logo.png" alt="MKBHD" class="logo"></a>
+        </div>
+        <nav class="navbar-expand-lg navbar-dark sticky-top p-3 shadow" role="navigation">
+            <div class="container-fluid">
+                <button class="navbar-toggler red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav px-5">
+                    <li class="nav-item">
+                        <a class="nav-link active px-5 text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown px-5">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Years
+                        </a>
+                        <ul class="dropdown-menu gray" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item text-dark" href="2019.html">2019 Awards</a></li>
+                          <li><a class="dropdown-item text-dark" href="2020.html">2020 Awards</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link text-light" href="#">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Picture-->
+        <div class="full-width">
+            <img src="images/mkbhd.jpg" alt="MKBHD" class="img-fluid">
+            <div class="carousel-caption">
+                <h1 class="display-1 text-center text-light">MARQUES BROWN LEE</h1>
+                <h1>Smartphone Awards</h1>
+                <button class="btn btn-outline-light btn-lg mt-2" type="button" href="2020.html">VIEW AWARDS</button>
+            </div>
+        </div>
+        <!--Content-->
+        <div class="container-fluid p-5">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Latest in technology.</h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p class="lead">Get the world-class news about the leading smartphones in the market. Reviews are brought to you by MKBHD.</p>
+                </div>
+            </div>
+            <div class="container text-center p-5 pb-0">
+                <div class="g-ytsubscribe" data-channelid="UCBJycsmduvYEL83R_U4JriQ" data-layout="full" data-theme="default" data-count="default"></div>
+            </div>
+        </div>
+        <!--VIDEOS-->
+        <div class="container-fluid text-center">
+            <div class="box m-2">
+                <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/4OnwUz-I2GI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="box m-2">
+                <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/e6_t26Q9aVM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <br>
+        <!--Footer-->
+        <footer>
+            <div class="container-fluid red text-light p-5">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img class="logo-gif" src="images/logo.gif" alt="MKBHD">
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <hr class="light">
+                        <p class="text-start"><a class="text-light" href="index.html">Home</a></p>
+                        <p class="text-start"><a class="text-light" href="2019.html">Years</a></p>
+                        <p class="text-start"><a class="text-light" href="#">About</a></p>
+                        <p class="text-start"><a class="text-light" href="#">Connect</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Developers</h4>
+                        <hr class="light">
+                        <p class="text-start">Armado, Jeremi An MI</p>
+                        <p class="text-start">Cabral, Christian James MI</p>
+                        <p class="text-start">Frias, Treasure V.</p>
+                        <p class="text-start">Rit, Kylev Allan A.</p>
+                        <p class="text-start">Salanguste, Jaystin Michael Joseph M.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-<div class="navbar" >
-    <h1><a href="index.html">The Weeknd</a></h1>
-    <a href="about.html">About</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact</a>
-    <a href="fansignup.html">Fan SignUp</a>
-</div>
-
-<body class="body">
-    <h1>Latest Video: </h1>
-    <iframe width="608" height="342" src="https://www.youtube.com/embed/XXYlFuWEuKI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h1>Spotify Playlist:</h1>
-    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6bnzK9KPvrz" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <br>
-</body>
-</div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+    </body>
 </html>
-

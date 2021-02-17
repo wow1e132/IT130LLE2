@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,fixed-scale">
+		<title>Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <div class="container-fluid text-center p-3">
+            <a href="index.html"><img src="images/logo.png" alt="MKBHD" class="logo"></a>
+            <h1>Smartphone Awards</h1>
+        </div>
+        <nav class="navbar-expand-lg navbar-dark sticky-top p-3 shadow" role="navigation">
+            <div class="container-fluid">
+                <button class="navbar-toggler red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-5 text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown px-5">
+                        <a class="nav-link active dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Years
+                        </a>
+                        <ul class="dropdown-menu gray" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item text-dark" href="2019.html">2019 Awards</a></li>
+                          <li><a class="dropdown-item text-dark" href="2020.html">2020 Awards</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link text-light" href="#">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Side Pane-->
+        <div class="container-fluid">
+            <div class="row min-vh-100 flex-column flex-md-row">
+                <aside class="col-12 col-md-3 col-xl-2 p-0 bg-dark flex-shrink-1 shadow">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark flex-md-column flex-row align-items-md-center py-2 text-end pe-3" id="sidebar">
+                        <button type="button" class="navbar-toggler border-0 order-1" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse order-last" id="nav">
+                            <ul class="navbar-nav flex-column w-100 justify-content-center pt-5">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019.html">2019</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019_bigsmartphone.html">Best Big Smartphone</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019_compactsmartphone.html">Best Compact Smartphone</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019_cameraphone.html">Best Camera Phone</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019_batteryphone.html">Best Battery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="2019_designphone.html">Design Award</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019_budgetphone.html">Best Budget Phone</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019_bustphone.html">Bust of the Year</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019_improvedphone.html">Most Improved</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="2019_poty.html">Phone of the Year</a>
+                                </li>
+                                <li class="nav-item pt-3">
+                                    <a class="nav-link" href="2020.html">2020</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </aside>
+                <main class="col px-0 flex-grow-1">
+                    <!--Welcome Header-->
+                    <div class="container text-center py-3">
+                        <article>
+                            <h1 class="display-5 pt-3">Smartphone Awards</h1>
+                            <h2 class="pb-3">Best Battery Smartphone 2019</h2>
+                            <hr class="light">
+                            <h1 class="pt-2 text-center">Samsung Galaxy Fold</h1>
+                        </article>
+                    </div>
+                    <!--Tab Gallery-->
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills mx-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <a class="nav-link" id="img-1-tab" data-bs-toggle="pill" data-bs-target="#img-1" type="button" role="tab" aria-controls="img-1" aria-selected="true" href="">
+                              <img class="img-side rounded" src="images/2019_5.png" alt="">
+                          </a>
+                          <a class="nav-link" id="img-2-tab" data-bs-toggle="pill" data-bs-target="#img-2" type="button" role="tab" aria-controls="img-2" aria-selected="false" href="">
+                              <img class="img-side rounded" src="images/2019_5_1.png" alt="">
+                          </a>
+                          <a class="nav-link" id="img-3-tab" data-bs-toggle="pill" data-bs-target="#img-3" type="button" role="tab" aria-controls="img-3" aria-selected="false" href="">
+                              <img class="img-side rounded" src="images/2019_5_2.png" alt="">
+                          </a>
+                        </div>
+                        <div class="tab-content pe-3" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="img-1" role="tabpanel" aria-labelledby="img-1-tab">
+                            <img class="img-fluid shadow rounded" src="images/2019_5.png" alt="">
+                          </div>
+                          <div class="tab-pane fade" id="img-2" role="tabpanel" aria-labelledby="img-2-tab">
+                            <img class="img-fluid shadow rounded" src="images/2019_5_1.png" alt="">
+                          </div>
+                          <div class="tab-pane fade" id="img-3" role="tabpanel" aria-labelledby="img-3-tab">
+                            <img class="img-fluid shadow rounded" src="images/2019_5_2.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    <!--CONTENT INFO-->
+                    <div class="container-fluid">
+                        
+                        <div class="container">
+                            <h3 class="pt-5 text-center">Specifications</h3>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Body</h1>
+                            <p class="mx-5"><b>Dimensions: </b>Unfolded: 160.9 x 117.9 x 6.9 mm</p>
+                            <p c;ass="mx-5 indent">Folded:263 g (9.28 oz) </p>
+                            <p class="mx-5"><b>Weight: </b>263 g (9.28 oz))</p>
+                            <p class="mx-5"><b>Build: </b>Glass front (folded), plastic front (unfolded), glass back, aluminum frame</p>
+                            <p class="mx-5"><b>Sim: </b>Nano-SIM, eSIM</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Display</h1>
+                            <p class="mx-5"><b>Type: </b>Foldable Dynamic AMOLED, HDR10+</p>
+                            <p class="mx-5"><b>Size: </b>7.3 inches, 162.6 cm2 (~85.7% screen-to-body ratio)</p>
+                            <p class="mx-5"><b>Resolution: </b>1536 x 2152 pixels (~362 ppi density)</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Platform</h1>
+                            <p class="mx-5"><b>OS: </b>Android 9.0 (Pie), upgradable to Android 11, One UI 3.0</p>
+                            <p class="mx-5"><b>Chipset: </b>Qualcomm SM8150 Snapdragon 855 (7 nm)</p>
+                            <p class="mx-5"><b>CPU: </b>Octa-core (1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)</p>
+                            <p class="mx-5"><b>GPU: </b>Adreno 640</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Memory</h1>
+                            <p class="mx-5"><b>Card slot: </b>No</p>
+                            <p class="mx-5"><b>Internal: </b>512GB 12GB RAM, UFS 3.0</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Main Camera</h1>
+                            <p class="mx-5"><b>Triple: </b>12 MP, f/1.5-2.4, 27mm (wide), 1/2.55", 1.4µm, Dual Pixel PDAF, OIS
+                            <p class="mx-5 indent"> 12 MP, f/2.4, 52mm (telephoto), 1/3.6", 1.0µm, AF, OIS, 2x optical zoom</p>
+                            <p class="mx-5 indent"> 16 MP, f/2.2, 12mm (ultrawide), 1/3.1", 1.0µm </p> 
+                            <p class="mx-5"><b>Features: </b>LED flash, HDR, panorama</p>
+                            <p class="mx-5"><b>Video: </b>4K@60fps, 1080p@60/240fps (gyro-EIS), 720p@960fps (gyro-EIS), HDR10</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Selfie Camera</h1>
+                            <p class="mx-5"><b>Dual: </b>10 MP, f/2.2, 26mm (wide), 1/3", 1.22µm
+                            <p class="mx-5 indent">8 MP, f/1.9, 24mm (wide), 1.22µm, depth sensor</p>
+                            <p class="mx-5 indent">Cover camera:</p>
+                            <p class="mx-5 indent">10 MP, f/2.2, 26mm (wide), 1/3", 1.22µm</p>
+                            <p class="mx-5"><b>Features: </b>HDR</p>
+                            <p class="mx-5"><b>Video: </b>4K@30/60fps, 1080p@30fps, gyro-EIS</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Sound</h1>
+                            <p class="mx-5"><b>Loudspeaker: </b>Yes, with stereo speakers
+                            <p class="mx-5 indent">> 32-bit/384kHz audio</p>
+                            <p class="mx-5 indent">Tuned by AKG</p>
+                            <p class="mx-5"><b>3.5mm Jack: </b>No</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Communications</h1>
+                            <p class="mx-5"><b>WLAN: </b>Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct, hotspot</p>
+                            <p class="mx-5"><b>Bluetooth: </b>5.0, A2DP, LE, aptX HD</p>
+                            <p class="mx-5"><b>GPS: </b>Yes, with A-GPS, GLONASS, GALILEO, BDS</p>
+                            <p class="mx-5"><b>NFC: </b>Yes</p>
+                            <p class="mx-5"><b>Radio: </b>No</p>
+                            <p class="mx-5"><b>USB: </b>USB Type-C 3.1</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Features</h1>
+                            <p class="mx-5"><b>Sensors: </b>ANT+</p>
+                            <p class="mx-5 indent">Bixby natural language commands and dictation</p>
+                            <p class="mx-5 indent">Samsung DeX (desktop experience support)</p>
+                            <p class="mx-5 indent">Samsung Pay (Visa, MasterCard certified)</p>
+                            <p class="mx-5 indent">Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer</p>
+                        </div>
+                        <div class="container p-3 text-start">
+                            <h1 class="lead text-center">Battery</h1>
+                            <p class="mx-5"><b>Type:</b>Li-Po 4380 mAh, non-removable</p>
+                            <p class="mx-5"><b>Charging: </b>Fast charging 15W</p>
+                            <p class="mx-5 indent">Fast wirelss chargin 15W</p>
+                            <p class="mx-5 indent">Reverse wireless charging 4.5W</p>
+                        </div>
+                        <hr>
+                        <div class="container-fluid row justify-content-center mb-5">
+                            <h3 class="py-3 text-center">Shops</h3>
+                            <div class="container col-2">
+                                <a href="https://www.lazada.com.ph/products/xiaomi-mi-10-ultra-5g-edition-8-core-qualcomm-snapdragon-865-please-pm-for-more-info-120x-zoom-laser-auto-focus-quad-camera-120hz-667-in-oled-screen-120w-ultra-fast-charger-cn-version-i1186186596-s4745370513.html?spm=a2o4l.searchlist.list.14.7df92431DiDAZS&search=1" target="_blank">
+                                    <img src="images/lazada.png" alt="lazada" class="img-icon">
+                                </a>
+                            </div>
+                            <div class="container col-2">
+                                <a href="https://shopee.ph/Xiaomi-Mi-10-Ultra-5G-Edition-8-core-Snapdragon-865-48MP-Laser-Focus-Quad-Camera-6.67-in-OLED-i.115617379.7148304898" target="_blank">
+                                    <img src="images/shopee.png" alt="lazada" class="img-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Pagination-->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link bg-dark" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link active bg-dark" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link bg-dark" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link bg-dark" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link bg-dark" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </main>
+            </div>
+        </div>
+        
+        <!--Footer-->
+        <footer>
+            <div class="container-fluid red text-light p-5">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img class="logo-gif" src="images/logo.gif" alt="MKBHD">
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <hr class="light">
+                        <p class="text-start"><a class="text-light" href="index.html">Home</a></p>
+                        <p class="text-start"><a class="text-light" href="2019.html">Years</a></p>
+                        <p class="text-start"><a class="text-light" href="#">About</a></p>
+                        <p class="text-start"><a class="text-light" href="#">Connect</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Developers</h4>
+                        <hr class="light">
+                        <p class="text-start">Armado, Jeremi An MI</p>
+                        <p class="text-start">Cabral, Christian James MI</p>
+                        <p class="text-start">Frias, Treasure V.</p>
+                        <p class="text-start">Rit, Kylev Allan A.</p>
+                        <p class="text-start">Salanguste, Jaystin Michael Joseph M.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+    </body>
+</html>
